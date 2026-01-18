@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="ch17_20.js"></script>
+</head>
+<body>
+    <h1>chapter17-20</h1>
+    <h4>Q2</h4>
+    <script>
+        var matrix = [
+  [0, 1, 2, 3],
+  [1, 0, 1, 2],
+  [2, 1, 0, 1]
+];
+
+for (var i = 0; i < matrix.length; i++) {
+  document.write(matrix[i].join(" ") + "<br>");
+}
+
+    </script>
+    <hr>
+    <h4>Q7</h4>
+    <script>
+        var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+var userInput = prompt("Enter item name").toLowerCase();
+var found = false;
+
+for (var i = 0; i < A.length; i++) {
+  if (A[i] === userInput) {
+    found = true;
+    document.write(userInput + " is available  ");
+    break;
+  }
+}
+
+if (!found) {
+  document.write("We are sorry. " + userInput + " is not available.");
+}
+    </script>
+</body>
+</html>
