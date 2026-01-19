@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="ch10-11.js"></script>
+</head>
+<body>
+    <script>
+        var totalMarks = parseInt(prompt("Enter Total Marks:"));
+var sub1 = parseInt(prompt("Enter marks for subject 1:"));
+var sub2 = parseInt(prompt("Enter marks for subject 2:"));
+var sub3 = parseInt(prompt("Enter marks for subject 3:"));
+
+var obtainedMarks = sub1 + sub2 + sub3;
+var percentage = (obtainedMarks / totalMarks) * 100;
+var grade, remarks;
+
+if (percentage >= 80) {
+    grade = "A-one"; remarks = "Excellent";
+} else if (percentage >= 70) {
+    grade = "A"; remarks = "Good";
+} else if (percentage >= 60) {
+    grade = "B"; remarks = "You need to improve";
+} else {
+    grade = "Fail"; remarks = "Sorry";
+}
+
+document.write("<h1>Marks Sheet</h1>");
+document.write("Total marks: " + totalMarks + "<br>");
+document.write("Marks obtained: " + obtainedMarks + "<br>");
+document.write("Percentage: " + percentage.toFixed(1) + "%<br>");
+document.write("Grade: " + grade + "<br>");
+document.write("Remarks: " + remarks + "<br>");
+    </script>
+</body>
+</html>
